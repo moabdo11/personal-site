@@ -1554,8 +1554,8 @@ img {
 
 @font-face {
     font-family: "linea-basic-10";
-    src: url(../icon-fonts/linea-basic-10.eot);
-    src: url(../icon-fonts/linea-basic-10.eot?#iefix) format("embedded-opentype"), url(../icon-fonts/linea-basic-10.woff) format("woff"), url(../icon-fonts/linea-basic-10.ttf) format("truetype"), url(../icon-fonts/linea-basic-10.svg#linea-basic-10) format("svg");
+    src: url(../css/icon-fonts/linea-basic-10.eot);
+    src: url(../icon-fonts/linea-basic-10.eot?#iefix) format("embedded-opentype"), url(../css/icon-fonts/linea-basic-10.woff) format("woff"), url(../css/icon-fonts/linea-basic-10.ttf) format("truetype"), url(../icon-fonts/linea-basic-10.svg#linea-basic-10) format("svg");
     font-weight: 400;
     font-style: normal
 }
