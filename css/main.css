@@ -1377,3 +1377,140 @@ a.button.dark:hover:before {
         margin-top: 20px;
     }
 }
+
+
+/* =Portfolio
+-------------------------------------------------------------- */
+
+.filters {
+    display: none;
+}
+
+.filters li {
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #666666;
+    display: inline-block;
+    margin: 20px;
+}
+
+.filters li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 100%;
+    width: 100%;
+    height: 1px;
+    background: #00d9ec;
+    opacity: 0;
+    /* Animtaion */
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    -ms-transition: opacity 0.3s, transform 0.3s;
+    -o-transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.filters .is-checked:before,
+.filters li:hover:before {
+    opacity: 1;
+    /* Animation */
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    -ms-transition: opacity 0.3s, transform 0.3s;
+    -o-transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.thumbnails {
+    margin: 25px 10px 0px 10px;
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 100%;
+    position: absolute;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    z-index: 1;
+    border: 20px solid rgba(0, 0, 0, .15);
+    -webkit-transition: all 0.5s cubic-bezier(.16, .68, .43, .99);
+    -moz-transition: all 0.5s cubic-bezier(.16, .68, .43, .99);
+    -ms-transition: all 0.5s cubic-bezier(.16, .68, .43, .99);
+    -o-transition: all 0.5s cubic-bezier(.16, .68, .43, .99);
+    transition: all 0.5s cubic-bezier(.16, .68, .43, .99);
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+
+.project-info {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -36px;
+    opacity: 0;
+    -webkit-animation: fadeOutDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    -moz-animation: fadeOutDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    -ms-animation: fadeOutDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    -o-animation: fadeOutDown 0.5s cubic-bezier(.16, .68, .43, .99);
+    animation: fadeOutDown 0.5s cubic-bezier(.16, .68, .43, .99);
+}
+
+.project-info.visible {
+    opacity: 1;
+    -webkit-animation: fadeInUp 0.5s cubic-bezier(.16, .68, .43, .99);
+    -moz-animation: fadeInUp 0.5s cubic-bezier(.16, .68, .43, .99);
+    -ms-animation: fadeInUp 0.5s cubic-bezier(.16, .68, .43, .99);
+    -o-animation: fadeInUp 0.5s cubic-bezier(.16, .68, .43, .99);
+    animation: fadeInUp 0.5s cubic-bezier(.16, .68, .43, .99);
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .filters {
+        display: block;
+    }
+    .thumbnails {
+        margin: 30px 20px 0px 20px;
+    }
+    .thumbnail {
+        width: 50%;
+    }
+    .project-info {
+        margin-top: -40px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1400px) {
+    .thumbnails {
+        margin: 50px 60px 0px 60px;
+    }
+}
