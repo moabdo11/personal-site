@@ -1514,3 +1514,83 @@ a.button.dark:hover:before {
         margin: 50px 60px 0px 60px;
     }
 }
+
+
+/* =Team
+-------------------------------------------------------------- */
+
+.team-info {
+    display: block;
+    width: 100%;
+    background: #fff;
+}
+
+.contact-information {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-information p {
+    color: #171a1c;
+    margin: 0;
+}
+
+.contact-information h6 {
+    text-indent: 2px;
+    color: #888888;
+    margin: 0;
+}
+
+.contact-information {
+    display: block;
+    text-align: left;
+    float: left;
+}
+
+.mail {
+    padding: 16px 20px 5px 20px;
+    display: block;
+    text-align: center;
+    float: right;
+    height: 100%;
+}
+
+.mail i {
+    font-size: 30px;
+    color: #d1d1d1;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.mail i:hover {
+    color: #888888;
+}
+
+.team-photo {
+    border-bottom: 1px solid #f3f3f3;
+    max-width: 50%;
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .team-photo {
+        max-width: 100%;
+    }
+    .contact-information {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .contact-information {
+        margin-bottom: 20px;
+    }
+}
