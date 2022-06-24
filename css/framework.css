@@ -1363,16 +1363,16 @@ img {
   */
 
 @font-face {
-    font-family: fontello;
-    src: url(../icon-fonts/fontello.eot?74022055);
-    src: url(../icon-fonts/fontello.eot?74022055#iefix) format('embedded-opentype'), url(../icon-fonts/fontello.woff?74022055) format('woff'), url(../icon-fonts/fontello.ttf?74022055) format('truetype'), url(../icon-fonts/fontello.svg?74022055#fontello) format('svg');
+    font-family: "fontello";
+    src: url(../icon-fonts/icons-fonts/font/fontello.eot);
+    src: url(../icon-fonts/icons-fonts/font/fontello.eot) format('embedded-opentype'), url(../icon-fonts/icons-fonts/font/fontello.woff) format('woff'), url(../icon-fonts/icons-fonts/font/fontello.ttf) format('truetype'), url(../icon-fonts/icons-fonts/font/fontello.svg) format('svg');
     font-weight: 400;
     font-style: normal
 }
 
 [class*=" social-icon-"]:before,
 [class^=social-icon-]:before {
-    font-family: fontello;
+    font-family: "fontello";
     font-style: normal;
     font-weight: 400;
     speak: none;
